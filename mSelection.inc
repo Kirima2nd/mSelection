@@ -322,7 +322,7 @@ stock ShowModelSelectionMenu(playerid, ListID, header_text[], dialogBGcolor = 0x
 
 //------------------------------------------------------------
 
-stock ShowModelSelectionMenuEx(playerid, items_array[], item_amount, header_text[], extraid, Float:Xrot = 0.0, Float:Yrot = 0.0, Float:Zrot = 0.0, Float:mZoom = 1.0, dialogBGcolor = 0x4A5A6BBB, previewBGcolor = 0x88888899 , tdSelectionColor = 0xFFFF00AA)
+stock ShowModelSelectionMenuEx(playerid, const items_array[], item_amount, const header_text[], extraid, Float:Xrot = 0.0, Float:Yrot = 0.0, Float:Zrot = 0.0, Float:mZoom = 1.0, dialogBGcolor = 0x4A5A6BBB, previewBGcolor = 0x88888899 , tdSelectionColor = 0xFFFF00AA)
 {
 	mS_DestroySelectionMenu(playerid);
 	if(item_amount > mS_CUSTOM_MAX_ITEMS)
