@@ -17,6 +17,12 @@ ShowModelSelectionMenuEx(playerid, items_array[], item_amount, header_text[], ex
 forward OnPlayerModelSelection(playerid, response, listid, modelid);
 forward OnPlayerModelSelectionEx(playerid, response, extraid, modelid);
 
+#if defined _INC_mSelection
+    #endinput
+#endif
+
+#define _INC_mSelection
+
 // settings static lists
 #define mS_TOTAL_ITEMS			1000 // Max amount of items from all lists
 #define mS_TOTAL_LISTS			20 // Max amount of lists
