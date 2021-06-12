@@ -13,15 +13,16 @@ ShowModelSelectionMenu(playerid, ListID, header_text[], dialogBGcolor = 0x4A5A6B
 ShowModelSelectionMenuEx(playerid, items_array[], item_amount, header_text[], extraid, Float:Xrot = 0.0, Float:Yrot = 0.0, Float:Zrot = 0.0, Float:mZoom = 1.0, dialogBGcolor = 0x4A5A6BBB, previewBGcolor = 0x88888899 , tdSelectionColor = 0xFFFF00AA)
 
 */
-// Callbacks
-forward OnPlayerModelSelection(playerid, response, listid, modelid);
-forward OnPlayerModelSelectionEx(playerid, response, extraid, modelid);
 
 #if defined _INC_mSelection
     #endinput
 #endif
 
 #define _INC_mSelection
+
+// Callbacks
+forward OnPlayerModelSelection(playerid, response, listid, modelid);
+forward OnPlayerModelSelectionEx(playerid, response, extraid, modelid);
 
 // settings static lists
 #define mS_TOTAL_ITEMS			1000 // Max amount of items from all lists
